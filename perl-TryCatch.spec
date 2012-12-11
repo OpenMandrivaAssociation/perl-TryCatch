@@ -52,3 +52,15 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
+
+%changelog
+* Thu Feb 02 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.3.0-2
++ Revision: 770620
+- clean up spec
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 1.3.0-1mdv2011.0
++ Revision: 607513
+- import perl-TryCatch
+
