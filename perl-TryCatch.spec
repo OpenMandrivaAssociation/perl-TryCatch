@@ -3,7 +3,7 @@
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Easily build XS extensions that depend on XS extensions
 License:	GPL+ or Artistic
@@ -17,6 +17,7 @@ BuildRequires:	perl(B::Hooks::OP::PPAddr)
 BuildRequires:	perl(Devel::Declare)
 BuildRequires:	perl(ExtUtils::Depends)
 BuildRequires:	perl(ExtUtils::MakeMaker)
+BuildRequires:	perl(Module::Implementation)
 BuildRequires:	perl(Moose)
 BuildRequires:	perl(MooseX::Types)
 BuildRequires:	perl(Parse::Method::Signatures)
@@ -52,15 +53,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-%changelog
-* Thu Feb 02 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.3.0-2
-+ Revision: 770620
-- clean up spec
-- svn commit -m mass rebuild of perl extension against perl 5.14.2
-
-* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 1.3.0-1mdv2011.0
-+ Revision: 607513
-- import perl-TryCatch
-
