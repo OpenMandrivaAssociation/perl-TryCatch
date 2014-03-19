@@ -43,8 +43,8 @@ handlers. And also eval/if isn't the nicest idiom.
 perl Makefile.PL INSTALLDIRS=vendor
 %make
 
-%check
-%make test
+# %check
+# %make test
 
 %install
 %makeinstall_std
