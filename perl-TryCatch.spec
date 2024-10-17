@@ -8,7 +8,7 @@ Release:	5
 Summary:	Easily build XS extensions that depend on XS extensions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/%{module}-%{upstream_version}.tar.xz
 
 BuildRequires:	perl(B::Hooks::EndOfScope)
