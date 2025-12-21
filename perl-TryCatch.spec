@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/%{module}-%{upstream_version}.tar.xz
 
+BuildRequires:	make
 BuildRequires:	perl(B::Hooks::EndOfScope)
 BuildRequires:	perl(B::Hooks::OP::Check)
 BuildRequires:	perl(B::Hooks::OP::PPAddr)
