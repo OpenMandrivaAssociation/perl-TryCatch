@@ -1,15 +1,15 @@
 %define	module	TryCatch
-%define	upstream_version 1.003000
+%define	upstream_version 1.003002
 
 Name:		perl-%{module}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Easily build XS extensions that depend on XS extensions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/%{module}-%{upstream_version}.tar.xz
+Url:		https://github.com/ashb/trycatch/tree/master
+Source0:	https://cpan.metacpan.org/authors/id/A/AS/ASH/TryCatch-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(B::Hooks::EndOfScope)
