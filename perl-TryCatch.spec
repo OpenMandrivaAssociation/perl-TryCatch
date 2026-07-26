@@ -1,15 +1,13 @@
 %define	module	TryCatch
-%define	upstream_version 1.003002
-
 Name:		perl-%{module}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.003002
+Release:	2
 
 Summary:	Easily build XS extensions that depend on XS extensions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/ashb/trycatch/tree/master
-Source0:	https://cpan.metacpan.org/authors/id/A/AS/ASH/TryCatch-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AS/ASH/TryCatch-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(B::Hooks::EndOfScope)
@@ -38,7 +36,7 @@ subtle bugs, primarily that its far too easy to stomp on the error in error
 handlers. And also eval/if isn't the nicest idiom.
 
 %prep
-%setup -q -n %{module}-%{upstream_version}
+%setup -q -n %{module}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
